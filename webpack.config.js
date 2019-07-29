@@ -56,6 +56,26 @@ module.exports = {
         		path.resolve(__dirname, 'node_modules'),
         		path.resolve(__dirname, 'src/style/common')
         	]
+        },
+        {
+            test: /\.scss$/,
+            use: ['style-loader', {
+                loader: 'css-loader',
+                options: {
+                    modules: true,
+                }
+            }, 'sass-loader'],
+            exclude: [
+                path.resolve(__dirname, 'node_modules'),
+                path.resolve(__dirname, 'src/style/common')
+            ]
+        },{
+            test: /\.scss$/,
+            use: ['style-loader', 'css-loader', 'sass-loader'],
+            include: [
+                path.resolve(__dirname, 'node_modules'),
+                path.resolve(__dirname, 'src/style/common')
+            ]
         }
         ]
 	},

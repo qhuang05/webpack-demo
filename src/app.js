@@ -12,6 +12,7 @@ import './style/common/common.css'
 import './style/common/font.css'
 import 'font-awesome/css/font-awesome.css'
 import StyleA from './style/a.css'
+import StyleAA from './style/aa.scss'
 
 ReactDOM.render(
 	<div>
@@ -21,6 +22,9 @@ ReactDOM.render(
 		<i className="fa fa-envelope-open"></i>
 		<div className={StyleA .oa}>
 			<span className={StyleA.ob}>test</span>
+		</div>
+		<div className={StyleAA .tt}>
+			<span className={StyleAA.tx}>test</span>
 		</div>
 	</div>,
 	document.getElementById('root')
